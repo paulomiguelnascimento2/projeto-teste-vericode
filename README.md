@@ -1,7 +1,8 @@
 # projeto-teste-vericode
 
-O objetivo deste projeto é a criação de testes automatizados na plataforma web da sample-app
+O objetivo deste projeto é a criação de testes automatizados na plataforma web da sample-app.
 
+```plaintext
 quality-assurance/
 ├── Page_objects
 │   └── enter-vehicle-data.py
@@ -17,6 +18,7 @@ quality-assurance/
 ├── .gitignore
 ├── README.md
 └── requirements.txt
+
 
 ## O que preciso fazer antes de rodar o primeiro teste?
 
