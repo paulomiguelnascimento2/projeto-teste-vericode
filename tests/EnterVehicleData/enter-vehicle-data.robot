@@ -7,8 +7,8 @@ Documentation        Automação da aba Enter Vehicle Data do portal sample app
 Preencher e Validar Formulário de Dados do Veículo
     Open Browser  ${URL}  ${BROWSER}
     Maximize Browser Window
-    Preencher Campo Make  Audi
-    Preencher Campo Model  Motorcycle
+    Preencher Campo ComboBox  Audi
+    Preencher Campo ComboBox Motorcycle
     Preencher Campo Cylinder Capacity  1500
     Preencher Campo Date Of Manufacture  2020-06-15
     Validar Campo Vazio  ${MAKE_FIELD}
