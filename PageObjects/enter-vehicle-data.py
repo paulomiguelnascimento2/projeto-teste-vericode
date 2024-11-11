@@ -1,0 +1,5 @@
+MAKE_FIELD="id=make"
+MODEL_FIELD="id=model"
+CYLINDER_CAPACITY_FIELD="id=cylindercapacity"
+DATE_FIELD="id=dateofmanufacture"
+NEXT_BUTTON="id=nextenterinsurantdata"
