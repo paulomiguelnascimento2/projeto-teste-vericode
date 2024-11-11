@@ -1,7 +1,7 @@
 ***Settings***
 
 Resource            ../../Resources/commom/BaseWeb.robot
-Documentation        Automacao da Funcionalidade de Agendamento de Apresentação
+Documentation        Automação da aba Enter Vehicle Data do portal sample app
 
 *** Test Cases ***
 Preencher e Validar Formulário de Dados do Veículo

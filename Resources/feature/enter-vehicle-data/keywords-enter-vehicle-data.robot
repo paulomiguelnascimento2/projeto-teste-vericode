@@ -1,4 +1,5 @@
 *** Settings ***
+
 Resource          ../../commom/BaseWeb.robot
 
 *** Keywords ***
@@ -21,27 +22,27 @@ Preencher Campo Make
     Wait Until Element Is Visible  ${MAKE_FIELD}  timeout=10s
     Wait Until Element Is Enabled  ${MAKE_FIELD}  timeout=10s
     Select From List by Value   ${MAKE_FIELD}     ${valor}
-    Capture Page Screenshot  # Captura de tela após preencher o campo Make
+    Capture Page Screenshot
 
 Preencher Campo Model
     [Arguments]  ${valor}
     Wait Until Element Is Visible  ${MAKE_FIELD}  timeout=10s
     Wait Until Element Is Enabled  ${MAKE_FIELD}  timeout=10s
     Select From List by Value      ${MODEL_FIELD}  ${valor}
-    Capture Page Screenshot  # Captura de tela após preencher o campo Model
+    Capture Page Screenshot
 
 Preencher Campo Cylinder Capacity
     [Arguments]  ${valor}
     Wait Until Element Is Visible  ${MAKE_FIELD}  timeout=10s
     Wait Until Element Is Enabled  ${MAKE_FIELD}  timeout=10s
     Input Text  ${CYLINDER_CAPACITY_FIELD}  ${valor}
-    Capture Page Screenshot  # Captura de tela após preencher o campo Cylinder Capacity
+    Capture Page Screenshot
 
 Preencher Campo Date Of Manufacture
     [Arguments]  ${valor}
     Input Text  ${DATE_FIELD}  ${valor}
-    Capture Page Screenshot  # Captura de tela após preencher o campo Date of Manufacture
+    Capture Page Screenshot
 
 Clique no Botão "Next"
     Click Element  ${NEXT_BUTTON}
-    Capture Page Screenshot  # Captura de tela após clicar no botão Next
+    Capture Page Screenshot
