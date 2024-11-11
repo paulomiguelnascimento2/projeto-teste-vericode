@@ -1,0 +1,12 @@
+/testsresults
+**/test_result
+**workspace.code-workspace
+.env
+**.png
+**.html
+**.xml
+.env
+results
+$GITHUB_ENV
+**/debug.robot
+results*
