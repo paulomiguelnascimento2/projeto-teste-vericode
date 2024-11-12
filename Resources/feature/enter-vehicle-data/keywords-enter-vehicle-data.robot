@@ -12,7 +12,7 @@ Validar Campo Vazio
 # keyword responsável por validar se o campo possui uma data no formato específico 20200615 e valida mensagem de erro exibida na aplicação
 Validar Formato Data
     [Arguments]  ${campo}
-    Wait Until Element Is Visible  ${campo}  timeout=5s
+    Wait Until Element Is Visible  ${campo}  timeout=2s
     ${campo_value}=  Get Value  ${campo}
     Log  Valor obtido no campo: ${campo_value}
     Capture Page Screenshot
@@ -22,16 +22,16 @@ Validar Formato Data
 # keyword responsável por efetuar o preenchimento de campos combo-box
 Preencher Campo ComboBox
     [Arguments]  ${campo}  ${valor}
-    Wait Until Element Is Visible  ${campo}  timeout=10s
-    Wait Until Element Is Enabled  ${campo}  timeout=10s
+    Wait Until Element Is Visible  ${campo}  timeout=2s
+    Wait Until Element Is Enabled  ${campo}  timeout=2s
     Select From List by Value  ${campo}  ${valor}
     Capture Page Screenshot
 
 # keyword responsável por efetuar o preenchimento de campos por tipo texto
 Preencher Campo Texto
     [Arguments]  ${campo}  ${valor}
-    Wait Until Element Is Visible  ${campo}  timeout=10s
-    Wait Until Element Is Enabled  ${campo}  timeout=10s
+    Wait Until Element Is Visible  ${campo}  timeout=2s
+    Wait Until Element Is Enabled  ${campo}  timeout=2s
     Input Text  ${campo}  ${valor}
     Capture Page Screenshot
 

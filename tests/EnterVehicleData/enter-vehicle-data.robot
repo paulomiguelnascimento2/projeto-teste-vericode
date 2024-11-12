@@ -5,7 +5,9 @@ Documentation        Automação da aba Enter Vehicle Data do portal sample app
 
 *** Test Cases ***
 Preencher e Validar Formulário de Dados do Veículo
+
     [Tags]    smokeVehicleDataCritical
+    
     Open Browser  ${URL}  ${BROWSER}
     Maximize Browser Window
     Preencher Campo ComboBox  ${MAKE_FIELD}                 Audi
