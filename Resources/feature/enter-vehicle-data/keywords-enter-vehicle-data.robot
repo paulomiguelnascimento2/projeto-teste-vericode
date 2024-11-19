@@ -35,7 +35,9 @@ Preencher Campo Texto
     Input Text  ${campo}  ${valor}
     Capture Page Screenshot
 
-# keyword responsável por efetuar o clique do botão next
-Clique no Botão "Next"
-    Click Element  ${NEXT_BUTTON}
+# keyword responsável por efetuar o clique de botão
+Clique no Botão
+    [Arguments]    ${botao_nome}    ${localizador}
+    Wait Until Element Is Visible    ${localizador}    timeout=5s
+    Click Element    ${localizador}
     Capture Page Screenshot
